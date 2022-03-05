@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DD870A727D3641300DD23B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870A627D3641300DD23B3 /* AppDelegate.swift */; };
+		1DD870A927D3641300DD23B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870A827D3641300DD23B3 /* SceneDelegate.swift */; };
+		1DD870AB27D3641300DD23B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870AA27D3641300DD23B3 /* ViewController.swift */; };
+		1DD870AE27D3641300DD23B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD870AC27D3641300DD23B3 /* Main.storyboard */; };
+		1DD870B027D3641500DD23B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DD870AF27D3641500DD23B3 /* Assets.xcassets */; };
+		1DD870B327D3641500DD23B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD870B127D3641500DD23B3 /* LaunchScreen.storyboard */; };
+		1DD870BE27D3641600DD23B3 /* SicrediChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870BD27D3641600DD23B3 /* SicrediChallengeTests.swift */; };
+		1DD870C827D3641600DD23B3 /* SicrediChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870C727D3641600DD23B3 /* SicrediChallengeUITests.swift */; };
+		1DD870CA27D3641600DD23B3 /* SicrediChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870C927D3641600DD23B3 /* SicrediChallengeUITestsLaunchTests.swift */; };
+		1DD870D827D364BC00DD23B3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870D627D364BC00DD23B3 /* BaseViewController.swift */; };
+		1DD870D927D364BC00DD23B3 /* UIImageView+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870D727D364BC00DD23B3 /* UIImageView+Misc.swift */; };
+		1DD870E327D364C500DD23B3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870DB27D364C500DD23B3 /* HomeViewModel.swift */; };
+		1DD870E427D364C500DD23B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870DC27D364C500DD23B3 /* HomeViewController.swift */; };
+		1DD870E527D364C500DD23B3 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870DE27D364C500DD23B3 /* Event.swift */; };
+		1DD870E627D364C500DD23B3 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870DF27D364C500DD23B3 /* HomeService.swift */; };
+		1DD870E727D364C500DD23B3 /* EventCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870E127D364C500DD23B3 /* EventCollectionView.swift */; };
+		1DD870E827D364C500DD23B3 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870E227D364C500DD23B3 /* EventCollectionViewCell.swift */; };
+		33C4C626762F1DC7731DFE20 /* Pods_SicrediChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DDB59F4E01772ED6F87473 /* Pods_SicrediChallengeTests.framework */; };
+		A69597523437698AEF1E7FB5 /* Pods_SicrediChallenge_SicrediChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9162E76FA5B2FC119AC9076 /* Pods_SicrediChallenge_SicrediChallengeUITests.framework */; };
+		B63FEA770F6C9B02D54708D9 /* Pods_SicrediChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D5F1FE48AB44746AE9507B /* Pods_SicrediChallenge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DD870BA27D3641600DD23B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DD8709B27D3641300DD23B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DD870A227D3641300DD23B3;
+			remoteInfo = SicrediChallenge;
+		};
+		1DD870C427D3641600DD23B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DD8709B27D3641300DD23B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DD870A227D3641300DD23B3;
+			remoteInfo = SicrediChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1265ED1F9AF7F1A64111A1CC /* Pods-SicrediChallenge-SicrediChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge-SicrediChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-SicrediChallenge-SicrediChallengeUITests/Pods-SicrediChallenge-SicrediChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		14D5F1FE48AB44746AE9507B /* Pods_SicrediChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SicrediChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD870A327D3641300DD23B3 /* SicrediChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicrediChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD870A627D3641300DD23B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DD870A827D3641300DD23B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1DD870AA27D3641300DD23B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1DD870AD27D3641300DD23B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1DD870AF27D3641500DD23B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DD870B227D3641500DD23B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1DD870B427D3641500DD23B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DD870B927D3641600DD23B3 /* SicrediChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SicrediChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD870BD27D3641600DD23B3 /* SicrediChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicrediChallengeTests.swift; sourceTree = "<group>"; };
+		1DD870C327D3641600DD23B3 /* SicrediChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SicrediChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD870C727D3641600DD23B3 /* SicrediChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicrediChallengeUITests.swift; sourceTree = "<group>"; };
+		1DD870C927D3641600DD23B3 /* SicrediChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicrediChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1DD870D627D364BC00DD23B3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1DD870D727D364BC00DD23B3 /* UIImageView+Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Misc.swift"; sourceTree = "<group>"; };
+		1DD870DB27D364C500DD23B3 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1DD870DC27D364C500DD23B3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1DD870DE27D364C500DD23B3 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		1DD870DF27D364C500DD23B3 /* HomeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		1DD870E127D364C500DD23B3 /* EventCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCollectionView.swift; sourceTree = "<group>"; };
+		1DD870E227D364C500DD23B3 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		42DDB59F4E01772ED6F87473 /* Pods_SicrediChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SicrediChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		459E09B5D4D3504D9CCE0B64 /* Pods-SicrediChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		ADEA5A9E4ECE0D4925462C80 /* Pods-SicrediChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge.release.xcconfig"; path = "Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		B0215CE6BE4F1620F919D6D2 /* Pods-SicrediChallenge-SicrediChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge-SicrediChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-SicrediChallenge-SicrediChallengeUITests/Pods-SicrediChallenge-SicrediChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B4EA4FF536F6380C667C7FC9 /* Pods-SicrediChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9162E76FA5B2FC119AC9076 /* Pods_SicrediChallenge_SicrediChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SicrediChallenge_SicrediChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC10852D2E560A53498929BE /* Pods-SicrediChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge.debug.xcconfig"; path = "Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DD870A027D3641300DD23B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B63FEA770F6C9B02D54708D9 /* Pods_SicrediChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DD870B627D3641600DD23B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33C4C626762F1DC7731DFE20 /* Pods_SicrediChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DD870C027D3641600DD23B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A69597523437698AEF1E7FB5 /* Pods_SicrediChallenge_SicrediChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DD8709A27D3641300DD23B3 = {
+			isa = PBXGroup;
+			children = (
+				1DD870A527D3641300DD23B3 /* SicrediChallenge */,
+				1DD870BC27D3641600DD23B3 /* SicrediChallengeTests */,
+				1DD870C627D3641600DD23B3 /* SicrediChallengeUITests */,
+				1DD870A427D3641300DD23B3 /* Products */,
+				6436E4EFC6992D7FD3624B56 /* Pods */,
+				AA2907B7FC311E653B097ED8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1DD870A427D3641300DD23B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DD870A327D3641300DD23B3 /* SicrediChallenge.app */,
+				1DD870B927D3641600DD23B3 /* SicrediChallengeTests.xctest */,
+				1DD870C327D3641600DD23B3 /* SicrediChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DD870A527D3641300DD23B3 /* SicrediChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				1DD870DA27D364C500DD23B3 /* Home */,
+				1DD870D627D364BC00DD23B3 /* BaseViewController.swift */,
+				1DD870D727D364BC00DD23B3 /* UIImageView+Misc.swift */,
+				1DD870A627D3641300DD23B3 /* AppDelegate.swift */,
+				1DD870A827D3641300DD23B3 /* SceneDelegate.swift */,
+				1DD870AA27D3641300DD23B3 /* ViewController.swift */,
+				1DD870AC27D3641300DD23B3 /* Main.storyboard */,
+				1DD870AF27D3641500DD23B3 /* Assets.xcassets */,
+				1DD870B127D3641500DD23B3 /* LaunchScreen.storyboard */,
+				1DD870B427D3641500DD23B3 /* Info.plist */,
+			);
+			path = SicrediChallenge;
+			sourceTree = "<group>";
+		};
+		1DD870BC27D3641600DD23B3 /* SicrediChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DD870BD27D3641600DD23B3 /* SicrediChallengeTests.swift */,
+			);
+			path = SicrediChallengeTests;
+			sourceTree = "<group>";
+		};
+		1DD870C627D3641600DD23B3 /* SicrediChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1DD870C727D3641600DD23B3 /* SicrediChallengeUITests.swift */,
+				1DD870C927D3641600DD23B3 /* SicrediChallengeUITestsLaunchTests.swift */,
+			);
+			path = SicrediChallengeUITests;
+			sourceTree = "<group>";
+		};
+		1DD870DA27D364C500DD23B3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1DD870DB27D364C500DD23B3 /* HomeViewModel.swift */,
+				1DD870DC27D364C500DD23B3 /* HomeViewController.swift */,
+				1DD870DD27D364C500DD23B3 /* Service */,
+				1DD870E027D364C500DD23B3 /* Event */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1DD870DD27D364C500DD23B3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1DD870DE27D364C500DD23B3 /* Event.swift */,
+				1DD870DF27D364C500DD23B3 /* HomeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1DD870E027D364C500DD23B3 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				1DD870E127D364C500DD23B3 /* EventCollectionView.swift */,
+				1DD870E227D364C500DD23B3 /* EventCollectionViewCell.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		6436E4EFC6992D7FD3624B56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC10852D2E560A53498929BE /* Pods-SicrediChallenge.debug.xcconfig */,
+				ADEA5A9E4ECE0D4925462C80 /* Pods-SicrediChallenge.release.xcconfig */,
+				1265ED1F9AF7F1A64111A1CC /* Pods-SicrediChallenge-SicrediChallengeUITests.debug.xcconfig */,
+				B0215CE6BE4F1620F919D6D2 /* Pods-SicrediChallenge-SicrediChallengeUITests.release.xcconfig */,
+				B4EA4FF536F6380C667C7FC9 /* Pods-SicrediChallengeTests.debug.xcconfig */,
+				459E09B5D4D3504D9CCE0B64 /* Pods-SicrediChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA2907B7FC311E653B097ED8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14D5F1FE48AB44746AE9507B /* Pods_SicrediChallenge.framework */,
+				E9162E76FA5B2FC119AC9076 /* Pods_SicrediChallenge_SicrediChallengeUITests.framework */,
+				42DDB59F4E01772ED6F87473 /* Pods_SicrediChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DD870A227D3641300DD23B3 /* SicrediChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DD870CD27D3641600DD23B3 /* Build configuration list for PBXNativeTarget "SicrediChallenge" */;
+			buildPhases = (
+				D807522DDD5E405E3671503E /* [CP] Check Pods Manifest.lock */,
+				1DD8709F27D3641300DD23B3 /* Sources */,
+				1DD870A027D3641300DD23B3 /* Frameworks */,
+				1DD870A127D3641300DD23B3 /* Resources */,
+				454539A96471DCC494DC4CF3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SicrediChallenge;
+			productName = SicrediChallenge;
+			productReference = 1DD870A327D3641300DD23B3 /* SicrediChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1DD870B827D3641600DD23B3 /* SicrediChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DD870D027D3641600DD23B3 /* Build configuration list for PBXNativeTarget "SicrediChallengeTests" */;
+			buildPhases = (
+				A30F14B50F08210B72BEFA12 /* [CP] Check Pods Manifest.lock */,
+				1DD870B527D3641600DD23B3 /* Sources */,
+				1DD870B627D3641600DD23B3 /* Frameworks */,
+				1DD870B727D3641600DD23B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DD870BB27D3641600DD23B3 /* PBXTargetDependency */,
+			);
+			name = SicrediChallengeTests;
+			productName = SicrediChallengeTests;
+			productReference = 1DD870B927D3641600DD23B3 /* SicrediChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1DD870C227D3641600DD23B3 /* SicrediChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DD870D327D3641600DD23B3 /* Build configuration list for PBXNativeTarget "SicrediChallengeUITests" */;
+			buildPhases = (
+				DEFB65501ED4D9389C57D6BD /* [CP] Check Pods Manifest.lock */,
+				1DD870BF27D3641600DD23B3 /* Sources */,
+				1DD870C027D3641600DD23B3 /* Frameworks */,
+				1DD870C127D3641600DD23B3 /* Resources */,
+				1FD05BF8C91DE8F373AE2FB5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DD870C527D3641600DD23B3 /* PBXTargetDependency */,
+			);
+			name = SicrediChallengeUITests;
+			productName = SicrediChallengeUITests;
+			productReference = 1DD870C327D3641600DD23B3 /* SicrediChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DD8709B27D3641300DD23B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					1DD870A227D3641300DD23B3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					1DD870B827D3641600DD23B3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 1DD870A227D3641300DD23B3;
+					};
+					1DD870C227D3641600DD23B3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 1DD870A227D3641300DD23B3;
+					};
+				};
+			};
+			buildConfigurationList = 1DD8709E27D3641300DD23B3 /* Build configuration list for PBXProject "SicrediChallenge" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DD8709A27D3641300DD23B3;
+			productRefGroup = 1DD870A427D3641300DD23B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DD870A227D3641300DD23B3 /* SicrediChallenge */,
+				1DD870B827D3641600DD23B3 /* SicrediChallengeTests */,
+				1DD870C227D3641600DD23B3 /* SicrediChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DD870A127D3641300DD23B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DD870B327D3641500DD23B3 /* LaunchScreen.storyboard in Resources */,
+				1DD870B027D3641500DD23B3 /* Assets.xcassets in Resources */,
+				1DD870AE27D3641300DD23B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DD870B727D3641600DD23B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DD870C127D3641600DD23B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FD05BF8C91DE8F373AE2FB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge-SicrediChallengeUITests/Pods-SicrediChallenge-SicrediChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge-SicrediChallengeUITests/Pods-SicrediChallenge-SicrediChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge-SicrediChallengeUITests/Pods-SicrediChallenge-SicrediChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		454539A96471DCC494DC4CF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A30F14B50F08210B72BEFA12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SicrediChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D807522DDD5E405E3671503E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SicrediChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEFB65501ED4D9389C57D6BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SicrediChallenge-SicrediChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DD8709F27D3641300DD23B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DD870E527D364C500DD23B3 /* Event.swift in Sources */,
+				1DD870D927D364BC00DD23B3 /* UIImageView+Misc.swift in Sources */,
+				1DD870E327D364C500DD23B3 /* HomeViewModel.swift in Sources */,
+				1DD870AB27D3641300DD23B3 /* ViewController.swift in Sources */,
+				1DD870D827D364BC00DD23B3 /* BaseViewController.swift in Sources */,
+				1DD870E827D364C500DD23B3 /* EventCollectionViewCell.swift in Sources */,
+				1DD870A727D3641300DD23B3 /* AppDelegate.swift in Sources */,
+				1DD870E627D364C500DD23B3 /* HomeService.swift in Sources */,
+				1DD870E727D364C500DD23B3 /* EventCollectionView.swift in Sources */,
+				1DD870E427D364C500DD23B3 /* HomeViewController.swift in Sources */,
+				1DD870A927D3641300DD23B3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DD870B527D3641600DD23B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DD870BE27D3641600DD23B3 /* SicrediChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DD870BF27D3641600DD23B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DD870CA27D3641600DD23B3 /* SicrediChallengeUITestsLaunchTests.swift in Sources */,
+				1DD870C827D3641600DD23B3 /* SicrediChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DD870BB27D3641600DD23B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DD870A227D3641300DD23B3 /* SicrediChallenge */;
+			targetProxy = 1DD870BA27D3641600DD23B3 /* PBXContainerItemProxy */;
+		};
+		1DD870C527D3641600DD23B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DD870A227D3641300DD23B3 /* SicrediChallenge */;
+			targetProxy = 1DD870C427D3641600DD23B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1DD870AC27D3641300DD23B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DD870AD27D3641300DD23B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1DD870B127D3641500DD23B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DD870B227D3641500DD23B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DD870CB27D3641600DD23B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1DD870CC27D3641600DD23B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DD870CE27D3641600DD23B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC10852D2E560A53498929BE /* Pods-SicrediChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SicrediChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = diego.SicrediChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DD870CF27D3641600DD23B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADEA5A9E4ECE0D4925462C80 /* Pods-SicrediChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SicrediChallenge/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = diego.SicrediChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1DD870D127D3641600DD23B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4EA4FF536F6380C667C7FC9 /* Pods-SicrediChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = diego.SicrediChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SicrediChallenge.app/SicrediChallenge";
+			};
+			name = Debug;
+		};
+		1DD870D227D3641600DD23B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 459E09B5D4D3504D9CCE0B64 /* Pods-SicrediChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = diego.SicrediChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SicrediChallenge.app/SicrediChallenge";
+			};
+			name = Release;
+		};
+		1DD870D427D3641600DD23B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1265ED1F9AF7F1A64111A1CC /* Pods-SicrediChallenge-SicrediChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = diego.SicrediChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SicrediChallenge;
+			};
+			name = Debug;
+		};
+		1DD870D527D3641600DD23B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0215CE6BE4F1620F919D6D2 /* Pods-SicrediChallenge-SicrediChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = diego.SicrediChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SicrediChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DD8709E27D3641300DD23B3 /* Build configuration list for PBXProject "SicrediChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DD870CB27D3641600DD23B3 /* Debug */,
+				1DD870CC27D3641600DD23B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DD870CD27D3641600DD23B3 /* Build configuration list for PBXNativeTarget "SicrediChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DD870CE27D3641600DD23B3 /* Debug */,
+				1DD870CF27D3641600DD23B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DD870D027D3641600DD23B3 /* Build configuration list for PBXNativeTarget "SicrediChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DD870D127D3641600DD23B3 /* Debug */,
+				1DD870D227D3641600DD23B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DD870D327D3641600DD23B3 /* Build configuration list for PBXNativeTarget "SicrediChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DD870D427D3641600DD23B3 /* Debug */,
+				1DD870D527D3641600DD23B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DD8709B27D3641300DD23B3 /* Project object */;
+}
