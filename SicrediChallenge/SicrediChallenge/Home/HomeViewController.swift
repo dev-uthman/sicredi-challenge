@@ -36,10 +36,13 @@ class HomeViewController: BaseViewController {
         view.addSubview(eventColletionView)
         eventColletionView.delegate = self
         eventColletionView.dataSource = self
-        eventColletionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
+        eventColletionView.topAnchor.constraint(greaterThanOrEqualTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        eventColletionView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+        eventColletionView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
         eventColletionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
         eventColletionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
-        eventColletionView.heightAnchor.constraint(lessThanOrEqualToConstant: 200).isActive = true
+        eventColletionView.heightAnchor.constraint(lessThanOrEqualToConstant: 300).isActive = true
+        eventColletionView.isPagingEnabled = true
     }
     
     private func bindRx() {
@@ -73,11 +76,11 @@ extension HomeViewController: UICollectionViewDataSource {
             cell.delegate = self
             
             guard let imageUrl = viewModel.events.value?[indexPath.row].image else { return cell }
-            
+            let textTitle = viewModel.events.value?[indexPath.row].title ?? ""
             if viewModel.hasImage(imageUrl) {
-                cell.configImage(image: viewModel.loadCacheImage(imageUrl))
+                cell.configImage(image: viewModel.loadCacheImage(imageUrl), title: textTitle)
             } else {
-                cell.configImage(urlImage: imageUrl)
+                cell.configImage(urlImage: imageUrl, title: textTitle)
             }
             return cell
         }

@@ -37,8 +37,12 @@ extension UIImageView {
             indicator.color = .black
             indicator.startAnimating()
             indicator.center = self.center
+            indicator.translatesAutoresizingMaskIntoConstraints = false
             
             self.addSubview(indicator)
+            
+            indicator.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: 0).isActive = true
+            indicator.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 0).isActive = true
         }
     }
 }

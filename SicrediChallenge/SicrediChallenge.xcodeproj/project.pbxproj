@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D4379D927D3E6DF00FAFD62 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4379D827D3E6DF00FAFD62 /* HomeCoordinator.swift */; };
 		1DD870A727D3641300DD23B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870A627D3641300DD23B3 /* AppDelegate.swift */; };
 		1DD870A927D3641300DD23B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870A827D3641300DD23B3 /* SceneDelegate.swift */; };
 		1DD870AB27D3641300DD23B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870AA27D3641300DD23B3 /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		1265ED1F9AF7F1A64111A1CC /* Pods-SicrediChallenge-SicrediChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge-SicrediChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-SicrediChallenge-SicrediChallengeUITests/Pods-SicrediChallenge-SicrediChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		14D5F1FE48AB44746AE9507B /* Pods_SicrediChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SicrediChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4379D827D3E6DF00FAFD62 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		1DD870A327D3641300DD23B3 /* SicrediChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicrediChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD870A627D3641300DD23B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DD870A827D3641300DD23B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		1DD870DA27D364C500DD23B3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1D4379D827D3E6DF00FAFD62 /* HomeCoordinator.swift */,
 				1DD870DB27D364C500DD23B3 /* HomeViewModel.swift */,
 				1DD870DC27D364C500DD23B3 /* HomeViewController.swift */,
 				1DD870DD27D364C500DD23B3 /* Service */,
@@ -459,6 +462,7 @@
 				1DD870E327D364C500DD23B3 /* HomeViewModel.swift in Sources */,
 				1DD870AB27D3641300DD23B3 /* ViewController.swift in Sources */,
 				1DD870D827D364BC00DD23B3 /* BaseViewController.swift in Sources */,
+				1D4379D927D3E6DF00FAFD62 /* HomeCoordinator.swift in Sources */,
 				1DD870E827D364C500DD23B3 /* EventCollectionViewCell.swift in Sources */,
 				1DD870A727D3641300DD23B3 /* AppDelegate.swift in Sources */,
 				1DD870E627D364C500DD23B3 /* HomeService.swift in Sources */,
