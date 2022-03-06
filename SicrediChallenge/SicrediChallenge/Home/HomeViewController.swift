@@ -13,10 +13,10 @@ class HomeViewController: BaseViewController {
     let viewModel = HomeViewModel()
     let disposeBag = DisposeBag()
     let eventColletionView = EventCollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
-
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
-      super.viewDidLoad()
+        super.viewDidLoad()
         view.backgroundColor = .white
         fetchData()
         setupUI()
@@ -41,7 +41,7 @@ class HomeViewController: BaseViewController {
         eventColletionView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
         eventColletionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
         eventColletionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
-        eventColletionView.heightAnchor.constraint(lessThanOrEqualToConstant: 300).isActive = true
+        eventColletionView.heightAnchor.constraint(lessThanOrEqualToConstant: 250).isActive = true
         eventColletionView.isPagingEnabled = true
     }
     
@@ -64,7 +64,15 @@ class HomeViewController: BaseViewController {
     }
 }
 
-extension HomeViewController: UICollectionViewDelegate {}
+extension HomeViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let event = viewModel.events.value?[indexPath.row] {
+            let viewModel = EventDetailViewModel(idEvent: event.id)
+            let vc = EventDetailsViewController(viewModel: viewModel)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+}
 
 extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -85,6 +93,21 @@ extension HomeViewController: UICollectionViewDataSource {
             return cell
         }
         return UICollectionViewCell()
+    }
+}
+
+extension HomeViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let frameSize = collectionView.frame.size
+        return CGSize(width: frameSize.width - 10, height: frameSize.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
     }
 }
 

@@ -21,7 +21,7 @@ class EventCollectionViewCell: UICollectionViewCell {
     }()
     
     private var textTitle: UILabel = {
-        $0.font = UIFont.systemFont(ofSize: 17, weight: UIFont.Weight.bold)
+        $0.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.bold)
         $0.numberOfLines = 0
         $0.sizeToFit()
         $0.textAlignment = .center
@@ -66,7 +66,7 @@ class EventCollectionViewCell: UICollectionViewCell {
         imageView.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -5).isActive = true
         imageView.bottomAnchor.constraint(equalTo: textTitle.topAnchor, constant: 10).isActive = true
  
-        textTitle.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 10).isActive = true
+        textTitle.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20).isActive = true
         textTitle.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 10).isActive = true
         textTitle.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: 10).isActive = true
         textTitle.heightAnchor.constraint(equalToConstant: 50).isActive = true

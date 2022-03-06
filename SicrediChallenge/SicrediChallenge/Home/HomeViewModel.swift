@@ -11,7 +11,7 @@ import RxCocoa
 
 class HomeViewModel {
 
-    private let service = HomeService()
+    private let service = EventService()
     private var imageCache:[String:UIImage] = [:]
     
     var events = BehaviorRelay<[Event]?>(value: nil)

@@ -12,7 +12,7 @@ class EventCollectionView: UICollectionView {
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 300)
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 250)
         super.init(frame: frame, collectionViewLayout: layout)
         self.backgroundColor = .white
         setupLayout()

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D4379D927D3E6DF00FAFD62 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4379D827D3E6DF00FAFD62 /* HomeCoordinator.swift */; };
 		1DD870A727D3641300DD23B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870A627D3641300DD23B3 /* AppDelegate.swift */; };
 		1DD870A927D3641300DD23B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870A827D3641300DD23B3 /* SceneDelegate.swift */; };
 		1DD870AB27D3641300DD23B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870AA27D3641300DD23B3 /* ViewController.swift */; };
@@ -22,9 +21,15 @@
 		1DD870E327D364C500DD23B3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870DB27D364C500DD23B3 /* HomeViewModel.swift */; };
 		1DD870E427D364C500DD23B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870DC27D364C500DD23B3 /* HomeViewController.swift */; };
 		1DD870E527D364C500DD23B3 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870DE27D364C500DD23B3 /* Event.swift */; };
-		1DD870E627D364C500DD23B3 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870DF27D364C500DD23B3 /* HomeService.swift */; };
+		1DD870E627D364C500DD23B3 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870DF27D364C500DD23B3 /* EventService.swift */; };
 		1DD870E727D364C500DD23B3 /* EventCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870E127D364C500DD23B3 /* EventCollectionView.swift */; };
 		1DD870E827D364C500DD23B3 /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD870E227D364C500DD23B3 /* EventCollectionViewCell.swift */; };
+		1DE5683D27D4644D00FB139A /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE5683C27D4644D00FB139A /* EventDetailsViewController.swift */; };
+		1DE5684527D46AF900FB139A /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE5684427D46AF900FB139A /* EventDetailViewModel.swift */; };
+		1DE5684727D4748600FB139A /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE5684627D4748600FB139A /* CheckIn.swift */; };
+		1DE5684B27D47CB300FB139A /* Encodable+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE5684A27D47CB300FB139A /* Encodable+Misc.swift */; };
+		1DE5684E27D4804B00FB139A /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE5684D27D4804B00FB139A /* CheckInViewController.swift */; };
+		1DE5685027D4807A00FB139A /* CheckInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE5684F27D4807A00FB139A /* CheckInViewModel.swift */; };
 		33C4C626762F1DC7731DFE20 /* Pods_SicrediChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DDB59F4E01772ED6F87473 /* Pods_SicrediChallengeTests.framework */; };
 		A69597523437698AEF1E7FB5 /* Pods_SicrediChallenge_SicrediChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9162E76FA5B2FC119AC9076 /* Pods_SicrediChallenge_SicrediChallengeUITests.framework */; };
 		B63FEA770F6C9B02D54708D9 /* Pods_SicrediChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D5F1FE48AB44746AE9507B /* Pods_SicrediChallenge.framework */; };
@@ -50,7 +55,6 @@
 /* Begin PBXFileReference section */
 		1265ED1F9AF7F1A64111A1CC /* Pods-SicrediChallenge-SicrediChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge-SicrediChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-SicrediChallenge-SicrediChallengeUITests/Pods-SicrediChallenge-SicrediChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		14D5F1FE48AB44746AE9507B /* Pods_SicrediChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SicrediChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D4379D827D3E6DF00FAFD62 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		1DD870A327D3641300DD23B3 /* SicrediChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicrediChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD870A627D3641300DD23B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DD870A827D3641300DD23B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,9 +73,15 @@
 		1DD870DB27D364C500DD23B3 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		1DD870DC27D364C500DD23B3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1DD870DE27D364C500DD23B3 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		1DD870DF27D364C500DD23B3 /* HomeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		1DD870DF27D364C500DD23B3 /* EventService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		1DD870E127D364C500DD23B3 /* EventCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCollectionView.swift; sourceTree = "<group>"; };
 		1DD870E227D364C500DD23B3 /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		1DE5683C27D4644D00FB139A /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		1DE5684427D46AF900FB139A /* EventDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewModel.swift; sourceTree = "<group>"; };
+		1DE5684627D4748600FB139A /* CheckIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
+		1DE5684A27D47CB300FB139A /* Encodable+Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Misc.swift"; sourceTree = "<group>"; };
+		1DE5684D27D4804B00FB139A /* CheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
+		1DE5684F27D4807A00FB139A /* CheckInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewModel.swift; sourceTree = "<group>"; };
 		42DDB59F4E01772ED6F87473 /* Pods_SicrediChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SicrediChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		459E09B5D4D3504D9CCE0B64 /* Pods-SicrediChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		ADEA5A9E4ECE0D4925462C80 /* Pods-SicrediChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge.release.xcconfig"; path = "Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +154,7 @@
 				1DD870AF27D3641500DD23B3 /* Assets.xcassets */,
 				1DD870B127D3641500DD23B3 /* LaunchScreen.storyboard */,
 				1DD870B427D3641500DD23B3 /* Info.plist */,
+				1DE5684A27D47CB300FB139A /* Encodable+Misc.swift */,
 			);
 			path = SicrediChallenge;
 			sourceTree = "<group>";
@@ -168,7 +179,8 @@
 		1DD870DA27D364C500DD23B3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1D4379D827D3E6DF00FAFD62 /* HomeCoordinator.swift */,
+				1DE5684C27D4803B00FB139A /* CheckInViewController */,
+				1DE5683B27D4642D00FB139A /* Details */,
 				1DD870DB27D364C500DD23B3 /* HomeViewModel.swift */,
 				1DD870DC27D364C500DD23B3 /* HomeViewController.swift */,
 				1DD870DD27D364C500DD23B3 /* Service */,
@@ -181,7 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				1DD870DE27D364C500DD23B3 /* Event.swift */,
-				1DD870DF27D364C500DD23B3 /* HomeService.swift */,
+				1DD870DF27D364C500DD23B3 /* EventService.swift */,
+				1DE5684627D4748600FB139A /* CheckIn.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -193,6 +206,24 @@
 				1DD870E227D364C500DD23B3 /* EventCollectionViewCell.swift */,
 			);
 			path = Event;
+			sourceTree = "<group>";
+		};
+		1DE5683B27D4642D00FB139A /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				1DE5683C27D4644D00FB139A /* EventDetailsViewController.swift */,
+				1DE5684427D46AF900FB139A /* EventDetailViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		1DE5684C27D4803B00FB139A /* CheckInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1DE5684D27D4804B00FB139A /* CheckInViewController.swift */,
+				1DE5684F27D4807A00FB139A /* CheckInViewModel.swift */,
+			);
+			path = CheckInViewController;
 			sourceTree = "<group>";
 		};
 		6436E4EFC6992D7FD3624B56 /* Pods */ = {
@@ -459,13 +490,18 @@
 			files = (
 				1DD870E527D364C500DD23B3 /* Event.swift in Sources */,
 				1DD870D927D364BC00DD23B3 /* UIImageView+Misc.swift in Sources */,
+				1DE5684B27D47CB300FB139A /* Encodable+Misc.swift in Sources */,
+				1DE5683D27D4644D00FB139A /* EventDetailsViewController.swift in Sources */,
+				1DE5685027D4807A00FB139A /* CheckInViewModel.swift in Sources */,
 				1DD870E327D364C500DD23B3 /* HomeViewModel.swift in Sources */,
 				1DD870AB27D3641300DD23B3 /* ViewController.swift in Sources */,
+				1DE5684727D4748600FB139A /* CheckIn.swift in Sources */,
 				1DD870D827D364BC00DD23B3 /* BaseViewController.swift in Sources */,
-				1D4379D927D3E6DF00FAFD62 /* HomeCoordinator.swift in Sources */,
 				1DD870E827D364C500DD23B3 /* EventCollectionViewCell.swift in Sources */,
 				1DD870A727D3641300DD23B3 /* AppDelegate.swift in Sources */,
-				1DD870E627D364C500DD23B3 /* HomeService.swift in Sources */,
+				1DE5684E27D4804B00FB139A /* CheckInViewController.swift in Sources */,
+				1DD870E627D364C500DD23B3 /* EventService.swift in Sources */,
+				1DE5684527D46AF900FB139A /* EventDetailViewModel.swift in Sources */,
 				1DD870E727D364C500DD23B3 /* EventCollectionView.swift in Sources */,
 				1DD870E427D364C500DD23B3 /* HomeViewController.swift in Sources */,
 				1DD870A927D3641300DD23B3 /* SceneDelegate.swift in Sources */,
