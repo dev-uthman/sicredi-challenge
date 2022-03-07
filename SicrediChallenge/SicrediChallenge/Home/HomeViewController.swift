@@ -58,9 +58,22 @@ class HomeViewController: BaseViewController {
         viewModel
             .error
             .observe(on: MainScheduler.asyncInstance)
-            .subscribe(onError: {[weak self] events in
-                
+            .subscribe(onError: {[alert] error in
+                alert(error)
             }).disposed(by: disposeBag)
+    }
+    
+    private func alert(_ error: Error) {
+        let title = "Ops"
+        let message = error.localizedDescription
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+            self.navigationController?.popViewController(animated: true)
+        }))
+        self.present(alert, animated: true, completion: {
+            self.hideLoading()
+        })
     }
 }
 

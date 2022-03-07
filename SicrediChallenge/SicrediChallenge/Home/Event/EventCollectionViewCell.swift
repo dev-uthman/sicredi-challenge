@@ -72,15 +72,12 @@ class EventCollectionViewCell: UICollectionViewCell {
         textTitle.heightAnchor.constraint(equalToConstant: 50).isActive = true
         textTitle.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: 10).isActive = true
 
-        imageView.layer.cornerRadius = 30
-        imageView.layer.shadowOffset = CGSize(width: 3, height: 3)
-        imageView.layer.shadowOpacity = 0.5
-        imageView.layer.shadowRadius = 4
-        imageView.clipsToBounds = true
+        imageView.roundedImage()
 
     }
     
     internal func configImage(urlImage: String, title: String) {
+        imageView.image = nil
         textTitle.text = title.uppercased()
         DispatchQueue.global(qos: .background).async { [imageView, setNeedsLayout, delegate] in
             imageView.setDownloadImage(url: urlImage, delegate)
@@ -89,6 +86,7 @@ class EventCollectionViewCell: UICollectionViewCell {
     }
     
     internal func configImage(image: UIImage, title: String) {
+        imageView.image = nil
         imageView.image = image
         textTitle.text = title.uppercased()
         setNeedsLayout()

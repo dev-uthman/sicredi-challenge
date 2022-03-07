@@ -29,7 +29,6 @@ class BaseViewController: UIViewController {
         DispatchQueue.main.async { [contentView, fadeIn] in
             guard let window = UIApplication.shared.windows.first else { return }
             window.addSubview(contentView)
-            contentView.alpha = 0.5
             contentView.topAnchor.constraint(equalTo: window.topAnchor).isActive = true
             contentView.leftAnchor.constraint(equalTo: window.leftAnchor).isActive = true
             contentView.rightAnchor.constraint(equalTo: window.rightAnchor).isActive = true
@@ -45,7 +44,6 @@ class BaseViewController: UIViewController {
     
     private func fadeIn() {
         UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveEaseInOut, animations: {
-            self.contentView.alpha = 0.5
         }) { (bool: Bool) in
             self.contentView.addSubview(self.activityIndicatorView)
         }
@@ -53,7 +51,6 @@ class BaseViewController: UIViewController {
     
     private func fadeOut() {
         UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveEaseInOut, animations: {
-            self.contentView.alpha = 0.0
         }) { [contentView] (bool: Bool) in
             contentView.removeFromSuperview()
         }
